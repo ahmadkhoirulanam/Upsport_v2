@@ -6,7 +6,6 @@ import 'package:sport/view/6_main_view/1_beranda_view/2_berita_detail_view/berit
 import 'package:flutter/cupertino.dart';
 import 'package:sport/view/0_global/1_value/transition_value.dart';
 import 'package:sport/view/6_main_view/1_beranda_view/1_event_detail_view/event_detail_view.dart';
-import 'package:sport/view/6_main_view/4_profil_view/profile_view.dart';
 import 'package:sport/view/6_main_view/5_user_view/user_view.dart';
 import 'package:sport/view/B.%20Pelatih/pelatih_view.dart';
 import 'package:sport/view/6_main_view/4_profil_view/2_promo_view/promo_view.dart';
@@ -21,7 +20,7 @@ import 'package:sport/view/B.%20Pelatih/widget/pelatihbola.dart';
 import 'package:sport/view/B.%20Pelatih/widget/pelatihbulu.dart';
 import 'package:sport/view/B.%20Pelatih/widget/pelatihfutsal.dart';
 import 'package:sport/view/B.%20Pelatih/widget/pelatihpimpong.dart';
-import 'package:sport/view/B.%20Pelatih/widget/pelatihtenis.dart';
+import 'package:sport/view/B.%20Pelatih/widget/pelatihsenam.dart';
 import 'package:sport/view/C.%20Wasit/wasit_view.dart';
 import 'package:sport/view/C.%20Wasit/widget/wasitbasket.dart';
 import 'package:sport/view/C.%20Wasit/widget/wasitbola.dart';
@@ -175,14 +174,14 @@ class FuncHomeView {
     });
   }
 
-  static void goToPelatihtenis(
+  static void goToPelatihsenam(
     BuildContext context, {
     @required AnimationController? anim,
   }) {
     DelayFunction.delay200msFunction(context, onBeforeDelay: () {
       anim!.reverse();
     }, onAfterDelay: () {
-      goToPage(context, page: PelatihTenis());
+      goToPage(context, page: PelatihSenam());
     });
   }
 

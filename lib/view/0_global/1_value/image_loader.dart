@@ -78,6 +78,7 @@ class ImgLoader {
   static var basket = setImgFitur("baket.png");
   static var sepak = setImgFitur("sepak.png");
   static var tenis = setImgFitur("tenis.png");
+  static var senam = setImgFitur("senam.png");
   static var pimpong = setImgFitur("pimpong.png");
   static var bulu = setImgFitur("bulu.png");
   static var ktpSelfieOverlay =

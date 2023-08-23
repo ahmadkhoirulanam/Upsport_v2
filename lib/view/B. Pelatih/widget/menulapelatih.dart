@@ -34,7 +34,7 @@ MenuPelatih(BuildContext context, {@required AnimationController? anim}) {
   goToFutsal() => FuncHomeView.goToPelatihFutsal(context, anim: anim);
   goToPelatihbasket() => FuncHomeView.goToPelatihbasket(context, anim: anim);
   goToPelatihbola() => FuncHomeView.goToPelatihbola(context, anim: anim);
-  goToPelatihtenis() => FuncHomeView.goToPelatihtenis(context, anim: anim);
+  goToPelatihsenam() => FuncHomeView.goToPelatihsenam(context, anim: anim);
   goToPelatihbulu() => FuncHomeView.goToPelatihbulu(context, anim: anim);
   goToPelatihpimpong() => FuncHomeView.goToPelatihpimpong(context, anim: anim);
   goToProfil() => FuncHomeView.goToProfil(context, anim: anim);
@@ -59,9 +59,9 @@ MenuPelatih(BuildContext context, {@required AnimationController? anim}) {
             onPress: () => goToPelatihbola(),
             title: "Sepak Bola"),
         button(
-            image: ImgLoader.tenis,
-            onPress: () => CustomBottomDialog(txt: "Segera Hadir"),
-            title: "Teniis"),
+            image: ImgLoader.senam,
+            onPress: () => goToPelatihsenam(),
+            title: "Senam"),
         button(
             image: ImgLoader.bulu,
             onPress: () => goToPelatihbulu(),
